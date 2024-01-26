@@ -1,0 +1,40 @@
+/* Основной стиль чекбокса */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid orange; /* Цвет рамки */
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  /* Стиль для чекбокса в состоянии "checked" */
+  .checkbox-input:checked {
+    background-color: orange; /* Цвет фона при выборе */
+    border-color: orange; /* Цвет рамки при выборе */
+  }
+  
+  /* Стиль для текста, связанного с чекбоксом */
+  .checkbox-label {
+    margin-left: 8px;
+    color: orange; /* Цвет текста */
+  }
+  
+  /* Стиль для изменения цвета при наведении курсора */
+  .checkbox-container:hover .checkbox-input:not(:checked) {
+    border-color: darkorange; /* Цвет рамки при наведении */
+  }
+  
+  /* Стиль для изменения цвета текста при наведении курсора */
+  .checkbox-container:hover .checkbox-label {
+    color: darkorange; /* Цвет текста при наведении */
+  }
+  

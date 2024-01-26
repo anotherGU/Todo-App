@@ -1,0 +1,8 @@
+.todo-button{
+    padding: 10px 20px;
+    border: none;
+    border-bottom: solid 2px orange;
+    background-color: transparent;
+    font-family: Arial, sans-serif;
+    color: orange;
+}

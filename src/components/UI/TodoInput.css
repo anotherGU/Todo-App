@@ -1,0 +1,9 @@
+input{
+    width: 85%;
+    border: none;
+    border-bottom: solid 2px orange;
+}
+
+input:focus {
+    outline: none;
+}
