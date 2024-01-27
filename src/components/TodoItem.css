@@ -28,4 +28,8 @@
     gap: 20px;
     align-items: center;
 }
+.edit__form {
+    display: flex;
+    gap: 20px;
+}
 

@@ -1,9 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 import "./TodoList.css"
 import TodoItem from "./TodoItem";
+import Modal from "./UI/Modal/Modal";
+import TodoButton from "./UI/TodoButton";
+import TodoInput from "./UI/TodoInput";
 
 
-const TodoList = ({todos, children, remove, setActive}) => {
+const TodoList = ({todos, children, remove, edit}) => {
 
     return (
         <div className="list">
@@ -11,13 +14,14 @@ const TodoList = ({todos, children, remove, setActive}) => {
            
            {todos.map((todo) => (
                <TodoItem 
+                   edit={edit}
                    todo={todo}
                    remove={remove}
-                   key={todo.id}
-                   setActive={setActive}>
+                   key={todo.id}>
                </TodoItem>
            ))}
         </div>
+        
     );
 }
 

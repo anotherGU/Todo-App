@@ -33,7 +33,8 @@ const TodoForm = ({create}) =>{
 
         const newTask = {
             id: Date.now(), 
-            task: inputValue
+            task: inputValue, 
+            isEdit: false
         }
         
         create(newTask);
